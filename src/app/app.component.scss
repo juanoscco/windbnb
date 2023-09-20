@@ -41,6 +41,7 @@ img {
     border: 1px solid #828282;
     padding-bottom: 1.5rem;
   }
+
 }
 
 .list-unstyled {
@@ -48,6 +49,7 @@ img {
   flex-direction: column;
   gap: 0.75rem;
   li {
+    cursor: pointer;
     p {
       color: #4f4f4f;
       font-family: Muli;

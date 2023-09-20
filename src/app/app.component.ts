@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
   // Método para cargar los alojamientos según la ciudad
   private loadStaysByCity(city: string) {
     this.stayService.getStays().subscribe((data) => {
-      this.stays = data.filter((stay) => stay.city === city);
+      this.stays = data.record.filter((stay) => stay.city === city);
     });
   }
 
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
 
   filterAndLoadStays() {
     this.stayService.getStays().subscribe((data) => {
-      this.stays = data.filter(
+      this.stays = data.record.filter(
         (stay) =>
           stay.city === this.selectedCity &&
           stay.maxGuests >= this.selectedMaxGuests

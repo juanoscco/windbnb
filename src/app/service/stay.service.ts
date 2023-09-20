@@ -7,11 +7,11 @@ import { Stay } from '../model/stay.model';
   providedIn: 'root',
 })
 export class StayService {
-  private apiUrl = '../../assets/api/stays.json';
+  private apiUrl = 'https://api.jsonbin.io/v3/b/650aef1aadb5f56d8f186168';
 
   constructor(private http: HttpClient) {}
 
-  getStays(): Observable<Stay[]> {
-    return this.http.get<Stay[]>(this.apiUrl);
+  getStays(): Observable<{record: Stay[]}> {
+    return this.http.get<{record: Stay[]}>(this.apiUrl);
   }
 }
