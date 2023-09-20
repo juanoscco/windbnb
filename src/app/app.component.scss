@@ -1,0 +1,219 @@
+img {
+  height: 16.8125rem;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.content-range {
+  label {
+    color: #333;
+    font-family: Muli;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  p {
+    color: #bdbdbd;
+    font-family: Muli;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  input {
+    width: 1.35rem;
+    border: none;
+    outline: none;
+    user-select: none;
+    padding: 0 5px;
+    &:disabled {
+      background: #fff;
+    }
+  }
+
+  button {
+    width: 1.4375rem;
+    height: 1.4375rem;
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #828282;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.list-unstyled {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  li {
+    p {
+      color: #4f4f4f;
+      font-family: Muli;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.card-text-super-host {
+  width: 6.25rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  border: 1px solid #4f4f4f;
+
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.title-limit {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: #333;
+
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card-span {
+  color: #828282;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card-text {
+  color: #4f4f4f;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.section-location {
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  width: 33%;
+  height: 3.4375rem;
+  border-radius: 1rem 0 0 1rem;
+  background: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.section-guests {
+  padding-top: 0.25rem;
+  padding-left: 1rem;
+  width: 33%;
+  height: 3.4375rem;
+  background: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.section-button {
+  width: 32%;
+  height: 3.4375rem;
+  background: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 1rem 1rem 0;
+  button {
+    width: 7.9375rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    background: #eb5757;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    p {
+      color: #f2f2f2;
+      font-family: "Muli";
+      font-size: 0.875rem;
+      font-style: normal;
+      line-height: normal;
+    }
+  }
+}
+
+.label {
+  color: #333;
+  font-family: Muli;
+  font-size: 0.5625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.span {
+  color: #bdbdbd;
+  font-family: Muli;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer {
+  margin-top: 1rem;
+  p {
+    color: #828282;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    a {
+      color: #828282;
+      font-family: Montserrat;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration-line: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .section-button {
+    box-shadow: none;
+    border-radius: none;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .section-location,
+  .section-guests {
+    width: 100%;
+  }
+
+  .section-location {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .section-guests {
+    border-radius: 0 0 1rem 1rem;
+  }
+}

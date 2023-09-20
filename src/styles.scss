@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+// Mixins
+// $icon-size: 4rem;
+$icon-width: 100px;
+$icon-height: 19px;
+
+$icon-height-search: 1.5rem;
+$icon-width-search: 1.5rem;
+
+$icon-height-star: 1.5rem;
+$icon-width-star: 1.25rem;
+
+@mixin icon($icon-url, $icon-width, $icon-height) {
+  display: inline-block;
+  width: $icon-width;
+  height: $icon-height;
+  background-image: url("#{$icon-url}");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-nav {
+  @include icon("./assets/icons/logo.svg", $icon-width, $icon-height);
+}
+
+.icon-search-outside {
+  @include icon(
+    "./assets/icons/search_FILL0_wght400_GRAD0_opsz20.svg",
+    $icon-width-search,
+    $icon-height-search
+  );
+}
+
+.icon-search-inside {
+  @include icon(
+    "./assets/icons/search_FILL0_wght400_GRAD0_opsz20_into.svg",
+    $icon-width-search,
+    $icon-height-search
+  );
+}
+
+.icon-star {
+  @include icon(
+    "./assets/icons/star_FILL0_wght400_GRAD0_opsz20.svg",
+    $icon-width-star,
+    $icon-height-star
+  );
+}
+
+.icon-location{
+  @include icon(
+    "./assets/icons/location_on_FILL0_wght400_GRAD0_opsz20.svg",
+    $icon-width-star,
+    $icon-height-star
+  );
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Muli";
+  src: url("./assets/fonts/Mulish/Mulish-Regular.ttf");
+  font-weight: 400;
+}
+
+.title {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
