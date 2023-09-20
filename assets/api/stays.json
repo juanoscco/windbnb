@@ -11,28 +11,6 @@
     "photo": "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=2255&q=80"
   },
   {
-    "city": "Helsinki",
-    "country": "Finland",
-    "superHost": false,
-    "title": "Modern Loft with Great View",
-    "rating": 4.6,
-    "maxGuests": 4,
-    "type": "Entire apartment",
-    "beds": 2,
-    "photo": "https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-  },
-  {
-    "city": "Helsinki",
-    "country": "Finland",
-    "superHost": true,
-    "title": "Cozy Studio near Market Square",
-    "rating": 4.9,
-    "maxGuests": 2,
-    "type": "Entire apartment",
-    "beds": 1,
-    "photo": "https://plus.unsplash.com/premium_photo-1661962771640-426ce94f16c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80"
-  },
-  {
     "city": "Turku",
     "country": "Finland",
     "superHost": false,
